@@ -1,13 +1,16 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.9",
+	"EngineAssociation": "{AAD6AD78-43D9-2B8A-F50B-FCAC7CAEFE49}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "FracturedProject",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	]
 }
