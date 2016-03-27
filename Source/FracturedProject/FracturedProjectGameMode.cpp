@@ -22,4 +22,5 @@ void AFracturedProjectGameMode::PostLogin(APlayerController * NewPlayer)
 {
 	Super::PostLogin(NewPlayer);
 	AFracturedProjectGameMode::player_amount++;
+	UE_LOG(LogTemp, Warning, TEXT("Players in Game: %d"), player_amount);
 }
