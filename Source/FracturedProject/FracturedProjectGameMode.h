@@ -13,9 +13,13 @@ class FRACTUREDPROJECT_API AFracturedProjectGameMode : public AGameMode
 {
 	GENERATED_BODY()
 
-		int player_amount = 0;
+public:
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ServerControl")
+		int32 player_amount = 0;
 
 		virtual void PreLogin(const FString & Options, const FString & Address, const TSharedPtr< const FUniqueNetId > & UniqueId, FString & ErrorMessage) override;
 	
 		virtual void PostLogin(APlayerController * NewPlayer) override;
+
+
 };
